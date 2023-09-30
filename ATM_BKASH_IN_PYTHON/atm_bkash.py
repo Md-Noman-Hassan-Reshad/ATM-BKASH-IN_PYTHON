@@ -11,7 +11,7 @@ def clear_console():
 # ATM balance function
 def load_balance():
   try:
-    with open('Python Project 1\\atm_balance.txt', 'r') as file:
+    with open('ATM_BKASH_IN_PYTHON\\atm_balance.txt', 'r') as file:
       return int(file.read())
   
   except FileNotFoundError:
@@ -19,7 +19,7 @@ def load_balance():
   
 def save_balance(balance):
   try:
-    with open('Python Project 1\\atm_balance.txt', 'w') as file:
+    with open('ATM_BKASH_IN_PYTHON\\atm_balance.txt', 'w') as file:
       file.write(str(balance))
   
   except Exception as e:
@@ -30,13 +30,13 @@ balance = load_balance()
 # bKash balance function
 def check_balance():
   try:
-    with open("Python Project 1\\bkash_balance.txt", "r") as f:
+    with open("ATM_BKASH_IN_PYTHON\\bkash_balance.txt", "r") as f:
       return int(f.read())
   except FileNotFoundError:
     return 100000
 
 def update_balance(balance):
-  with open("Python Project 1\\bkash_balance.txt", "w") as f:
+  with open("ATM_BKASH_IN_PYTHON\\bkash_balance.txt", "w") as f:
     f.write(str(balance))
 
 balance = check_balance()
