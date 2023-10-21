@@ -6,7 +6,6 @@ user_pin = 12345
 
 def clear_console():
   os.system('cls' if os.name == 'nt' else 'clear')
-  clear_console()
 
 # ATM balance function
 def load_balance():
